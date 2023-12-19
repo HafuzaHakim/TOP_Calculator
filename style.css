@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #caf0f8;
+}
+
+p {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 27%;
+  border-radius: 50%;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+p:active {
+  opacity: 90%;
+}
+
+main {
+  height: 90vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  border-radius: 1em;
+  width: 80%;
+  max-width: 400px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 0.5em;
+  background-color: #001d3d;
+}
+
+.interface {
+  grid-column: span 4;
+  grid-row: span 1;
+  font-size: 2rem;
+  border-radius: 0.25em;
+  background-color: #ffffff;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  overflow: hidden;
+}
+
+.numpads {
+  grid-column: span 3;
+  grid-row: span 4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.operators {
+  grid-row: span 4;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.numpads > p {
+  background-color: #e5e5e5;
+}
+
+.operators > p {
+  background-color: #f4a261;
+}
